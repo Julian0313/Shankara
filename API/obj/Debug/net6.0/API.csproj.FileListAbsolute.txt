@@ -64,3 +64,4 @@ C:\Users\david\Documents\shankara\API\bin\Debug\net6.0\Infrastructure.pdb
 C:\Users\david\Documents\shankara\API\bin\Debug\net6.0\Core.pdb
 C:\Users\david\Documents\shankara\api\bin\Debug\net6.0\AutoMapper.dll
 C:\Users\david\Documents\shankara\api\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\david\Documents\shankara\api\bin\Debug\net6.0\API.staticwebassets.runtime.json
