@@ -1,39 +1,33 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\david\\Documents\\shankara\\api\\API.csproj": {}
+    "C:\\Users\\David\\Documents\\Shankara\\api\\API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\david\\Documents\\shankara\\api\\API.csproj": {
+    "C:\\Users\\David\\Documents\\Shankara\\api\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\david\\Documents\\shankara\\api\\API.csproj",
+        "projectUniqueName": "C:\\Users\\David\\Documents\\Shankara\\api\\API.csproj",
         "projectName": "API",
-        "projectPath": "C:\\Users\\david\\Documents\\shankara\\api\\API.csproj",
-        "packagesPath": "C:\\Users\\david\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\david\\Documents\\shankara\\api\\obj\\",
+        "projectPath": "C:\\Users\\David\\Documents\\Shankara\\api\\API.csproj",
+        "packagesPath": "C:\\Users\\David\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\David\\Documents\\Shankara\\api\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\david\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\David\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\david\\Documents\\shankara\\Infrastructure\\Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\david\\Documents\\shankara\\Infrastructure\\Infrastructure.csproj"
+              "C:\\Users\\David\\Documents\\Shankara\\Infrastructure\\Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\David\\Documents\\Shankara\\Infrastructure\\Infrastructure.csproj"
               }
             }
           }
@@ -50,7 +44,7 @@
           "dependencies": {
             "AutoMapper.Extensions.Microsoft.DependencyInjection": {
               "target": "Package",
-              "version": "[8.1.1, )"
+              "version": "[11.0.0, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
@@ -89,28 +83,22 @@
         }
       }
     },
-    "C:\\Users\\david\\Documents\\shankara\\Core\\Core.csproj": {
+    "C:\\Users\\David\\Documents\\Shankara\\Core\\Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\david\\Documents\\shankara\\Core\\Core.csproj",
+        "projectUniqueName": "C:\\Users\\David\\Documents\\Shankara\\Core\\Core.csproj",
         "projectName": "Core",
-        "projectPath": "C:\\Users\\david\\Documents\\shankara\\Core\\Core.csproj",
-        "packagesPath": "C:\\Users\\david\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\david\\Documents\\shankara\\Core\\obj\\",
+        "projectPath": "C:\\Users\\David\\Documents\\Shankara\\Core\\Core.csproj",
+        "packagesPath": "C:\\Users\\David\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\David\\Documents\\Shankara\\Core\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\david\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\David\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -147,36 +135,30 @@
         }
       }
     },
-    "C:\\Users\\david\\Documents\\shankara\\Infrastructure\\Infrastructure.csproj": {
+    "C:\\Users\\David\\Documents\\Shankara\\Infrastructure\\Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\david\\Documents\\shankara\\Infrastructure\\Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\David\\Documents\\Shankara\\Infrastructure\\Infrastructure.csproj",
         "projectName": "Infrastructure",
-        "projectPath": "C:\\Users\\david\\Documents\\shankara\\Infrastructure\\Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\david\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\david\\Documents\\shankara\\Infrastructure\\obj\\",
+        "projectPath": "C:\\Users\\David\\Documents\\Shankara\\Infrastructure\\Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\David\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\David\\Documents\\Shankara\\Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\david\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\David\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\david\\Documents\\shankara\\Core\\Core.csproj": {
-                "projectPath": "C:\\Users\\david\\Documents\\shankara\\Core\\Core.csproj"
+              "C:\\Users\\David\\Documents\\Shankara\\Core\\Core.csproj": {
+                "projectPath": "C:\\Users\\David\\Documents\\Shankara\\Core\\Core.csproj"
               }
             }
           }

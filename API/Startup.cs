@@ -16,6 +16,8 @@ using Infrastructure.Data;
 using Core.Interfaces;
 using API.Helpers;
 using API.Middelware;
+using API.Errors;
+using API.Extensions;
 
 namespace API
 {
@@ -32,28 +34,24 @@ namespace API
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-
-            services.AddControllers();
-            services.AddScoped<IProductRepository, ProductRepository>();
-            services.AddScoped(typeof(IGenericRepository<>),(typeof(GenericRepository<>)));
             services.AddAutoMapper(typeof(MappingProfiles));
-            services.AddDbContext<StoreContext>(x => x.UseSqlServer(_config.GetConnectionString("DefaultConnection")));
-            services.AddSwaggerGen(c =>
-            {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "WebAPIv5", Version = "v1" });
-            });
+            services.AddControllers();
+            services.AddDbContext<StoreContext>(x => 
+            x.UseSqlServer(_config.GetConnectionString("DefaultConnection")));
+            services.AddApplicationServices();   
+            services.AddSwaggerDocumentation();         
+            
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
-            app.UseMiddleware<ExceptionMiddelware>();
-            if (env.IsDevelopment())
-            {
-                // app.UseDeveloperExceptionPage();
-                app.UseSwagger();
-                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "WebAPIv5 v1"));
-            }
+            app.UseMiddleware<ExceptionMiddelware>();           
+              
+            // if (env.IsDevelopment())
+            // {
+            // app.UseDeveloperExceptionPage();
+            // }
 
             app.UseStatusCodePagesWithReExecute("/errors/{0}");
             app.UseHttpsRedirection();
@@ -62,6 +60,7 @@ namespace API
             app.UseStaticFiles();
 
             app.UseAuthorization();
+            app.UseSwaggerDocumentation();
 
             app.UseEndpoints(endpoints =>
             {
