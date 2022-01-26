@@ -66,7 +66,7 @@ namespace API
             app.UseRouting();
             app.UseStaticFiles();
 
-            // app.UseCors("CorsPolicy");
+            //  app.UseCors("CorsPolicy");
              app.UseCors(x => x
             .AllowAnyOrigin()
             .AllowAnyMethod()
