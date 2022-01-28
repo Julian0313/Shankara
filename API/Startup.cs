@@ -18,6 +18,7 @@ using API.Helpers;
 using API.Middelware;
 using API.Errors;
 using API.Extensions;
+using StackExchange.Redis;
 
 namespace API
 {
@@ -38,6 +39,14 @@ namespace API
             services.AddControllers();
             services.AddDbContext<StoreContext>(x => 
             x.UseSqlServer(_config.GetConnectionString("DefaultConnection")));
+            
+            services.AddSingleton<IConnectionMultiplexer>(c=>{
+                var configuration = ConfigurationOptions.Parse(_config
+                .GetConnectionString("Redis"), true);
+                return ConnectionMultiplexer.Connect(configuration);
+                
+            });
+
             services.AddApplicationServices();   
             services.AddSwaggerDocumentation();   
             services.AddCors(opt=>
@@ -72,7 +81,6 @@ namespace API
             .AllowAnyMethod()
             .AllowAnyHeader());
 
-            app.UseHttpsRedirection();
 
             app.UseAuthorization();
             app.UseSwaggerDocumentation();
